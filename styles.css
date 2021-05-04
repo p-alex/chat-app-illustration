@@ -1,0 +1,203 @@
+:root {
+  --LightMagenta: hsl(293, 100%, 63%);
+  --LightViolet: hsl(264, 100%, 61%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: #fafafa;
+}
+.bg-shape1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100px;
+  background: linear-gradient(var(--LightMagenta), var(--LightViolet));
+  width: 520px;
+  height: 700px;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+.bg-shape2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: -100px;
+  background: #f9f4fa;
+  width: 420px;
+  height: 700px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+.phone {
+  position: absolute;
+  left: 25.1%;
+  top: 150px;
+  width: 250px;
+  height: 510px;
+  border-radius: 40px;
+  border: solid white 10px;
+  overflow: hidden;
+  background: #f5f3f8;
+  box-shadow: 0 0 20px rgba(32, 32, 32, 0.1);
+}
+.phone-header {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to left, var(--LightMagenta), var(--LightViolet));
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+}
+.phone-header i {
+  color: white;
+}
+.phone-header-shape {
+  position: absolute;
+  top: -10px;
+  width: 56%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 25px;
+  border-radius: 50px;
+  background: white;
+}
+.phone-header_container {
+  position: relative;
+  top: 6px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nameStatusAvatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -15px;
+}
+.nameStatusAvatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid var(--White) 2px;
+  margin-right: 5px;
+}
+.nameStatusAvatar div {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nameStatusAvatar div p {
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+}
+.nameStatusAvatar div small {
+  color: white;
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 10px;
+}
+.phone-body {
+  position: relative;
+  width: 100%;
+}
+.chatbox {
+  position: relative;
+  padding: 5px;
+  font-size: 9px;
+  width: 130px;
+  margin: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+}
+.chatbox.left-chatbox {
+  position: relative;
+  left: 0;
+  color: #a584b9;
+  background: #ede4f5;
+}
+.chatbox.right-chatbox {
+  position: relative;
+  color: #797583;
+  left: 80px;
+  background: white;
+}
+.images {
+  position: relative;
+  display: flex;
+  left: 80px;
+  align-items: center;
+}
+.images img {
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.chatbox.special-chatbox {
+  width: 70%;
+  background: linear-gradient(
+    to right,
+    var(--LightMagenta),
+    var(--LightViolet)
+  );
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.special-chatbox p {
+  color: white;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid #f060ff 1px;
+  margin-right: 10px;
+}
+.price {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.input-section {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.input-section .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+  background: white;
+  justify-content: space-between;
+}
+.input-section .input p {
+  font-size: 10px;
+  color: #666;
+  margin-left: 5px;
+}
+.input-section .input .btn {
+  background: #382050;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+}
