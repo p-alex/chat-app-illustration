@@ -282,7 +282,8 @@ footer a {
   }
   .bg-shape2 {
     width: 50vw;
-    height: 40vh;
+    height: 400px;
+    border-radius: 500px;
   }
 }
 @keyframes scale {
